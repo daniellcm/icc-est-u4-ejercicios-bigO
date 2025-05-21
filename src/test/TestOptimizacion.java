@@ -1,5 +1,6 @@
 package test;
 
+
 import main.ejercicio2.RespuestasOptimizadas;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -20,7 +21,7 @@ public class TestOptimizacion {
     public void testContarMayoresOpt() {
         int[] arr = { 1, 3, 5, 7, 2 };
         assertEquals(3, RespuestasOptimizadas.contarMayoresOpt(arr, 2)); // 3,5,7 son > 2
-        assertEquals(2, RespuestasOptimizadas.contarMayoresOpt(arr, 5)); // 7 es > 5
+        assertEquals(1, RespuestasOptimizadas.contarMayoresOpt(arr, 5)); // 7 es > 5
         assertEquals("O(N)", normalizar(RespuestasOptimizadas.contarMayoresComplejidad),
                 "Complejidad incorrecta para contarMayoresOpt");
     }
